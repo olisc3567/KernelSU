@@ -1,4 +1,4 @@
-name: Build Kernel - ChromeOS ARCVM
+name: Build Kernel - ChromeOS ARCVM arm64
 on:
   push:
     branches: ["main", "ci", "checkci"]
