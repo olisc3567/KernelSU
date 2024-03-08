@@ -96,7 +96,7 @@ jobs:
       - name: Build Kernel
         working-directory: kernel
         run: |
-          set -a && . build.config.gki.arm64; set +a
+          set -a && . build.config.gki.aarch64; set +a
           export DEFCONFIG=arm64_arcvm_defconfig
           if [ ! -z ${{ vars.EXPECTED_SIZE }} ] && [ ! -z ${{ vars.EXPECTED_HASH }} ]; then
             export KSU_EXPECTED_SIZE=${{ vars.EXPECTED_SIZE }}
